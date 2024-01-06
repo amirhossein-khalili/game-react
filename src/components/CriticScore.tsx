@@ -1,5 +1,4 @@
 import { Badge } from '@chakra-ui/react';
-import { color } from 'framer-motion';
 
 interface Props {
   score: number;
@@ -10,13 +9,13 @@ const CriticScore = ({ score }: Props) => {
 
   switch (true) {
     case score < 30:
-      badgeColor = 'red.400';
+      badgeColor = 'red.300';
       break;
     case score < 70:
-      badgeColor = 'yellow.400';
+      badgeColor = 'yellow.300';
       break;
     default:
-      badgeColor = 'green.400';
+      badgeColor = 'green.300';
   }
 
   return (
